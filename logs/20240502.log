@@ -1,0 +1,121 @@
+2024-05-02 10:32:14,271 - Email automation - Downloaded webdriver to: C:\ProgramData\robocorp\webdrivers\.wdm\drivers\chromedriver\win64\124.0.6367.91\chromedriver-win32/chromedriver.exe
+2024-05-02 10:32:14,424 - Email automation - Webdriver version taken into use: ChromeDriver 124.0.6367.91 (51df0e5e17a8b0a4f281c1665dbd1b8a0c6b46af-refs/branch-heads/6367@{#984})
+
+2024-05-02 10:32:14,425 - Email automation - Creating an instance of the Chrome WebDriver.
+2024-05-02 10:32:16,080 - Email automation - Created Chrome browser (version 124.0.6367) with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox
+2024-05-02 10:32:16,080 - Email automation - <p>Attempted combinations:</p><div class="doc"><table><tr><th>Browser</th><th>Download</th><th>Error</th></tr><tr><td>Chrome</td><td>False</td><td>Message: Webdriver executable 'chromedriver' is not in PATH (with disabled Selenium Manager)
+</td></tr><tr><td>Chrome</td><td>True</td><td></td></tr></table></div>
+2024-05-02 10:32:16,081 - Email automation - Opening url 'https://wotdev.awsapps.com/auth/?client_id=6b9615ec01be1c8d&redirect_uri=https%3A%2F%2Fwebmail.mail.us-east-1.awsapps.com%2Fworkmail%2F'
+2024-05-02 10:32:21,842 - Email automation - Typing text 'juan.valenzuela' into text field '//*[@id="wdc_username"]'.
+2024-05-02 10:32:24,013 - Email automation - Typing text '12FG45#36&hyu' into text field '//*[@id="wdc_password"]'.
+2024-05-02 10:32:26,170 - Email automation - Clicking button '//*[@id="wdc_login_button"]'.
+2024-05-02 10:32:46,302 - Email automation - Ran with keyword <b>Element Should Be Visible</b> which returned error: <i>Element with locator '//*[ contains (text(), "Authentication Failed" ) ]' not found.</i>
+2024-05-02 10:32:46,427 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-05-02 10:32:46,427 - Email automation - Construyendo correo
+2024-05-02 10:32:46,451 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-05-02 10:32:46,452 - Email automation - Clicking element '//*[ contains (text(), "New item" ) ]'.
+2024-05-02 10:32:48,579 - Email automation - Element '//*[ contains (text(), "New email" ) ]' is displayed.
+2024-05-02 10:32:48,579 - Email automation - Clicking element '//*[ contains (text(), "New email" ) ]'.
+2024-05-02 10:32:50,807 - Email automation - Escribiendo asunto del correo
+2024-05-02 10:32:50,929 - Email automation - Construyendo mensaje
+2024-05-02 10:32:50,929 - Email automation - Mensaje serializado
+2024-05-02 10:32:50,930 - Email automation - Sending key(s) ('P',) to page.
+2024-05-02 10:32:50,930 - Email automation - Sending key P
+2024-05-02 10:32:50,945 - Email automation - Sending key(s) ('L',) to page.
+2024-05-02 10:32:50,945 - Email automation - Sending key L
+2024-05-02 10:32:50,952 - Email automation - Sending key(s) ('E',) to page.
+2024-05-02 10:32:50,952 - Email automation - Sending key E
+2024-05-02 10:32:50,959 - Email automation - Sending key(s) ('A',) to page.
+2024-05-02 10:32:50,959 - Email automation - Sending key A
+2024-05-02 10:32:50,965 - Email automation - Sending key(s) ('S',) to page.
+2024-05-02 10:32:50,966 - Email automation - Sending key S
+2024-05-02 10:32:50,972 - Email automation - Sending key(s) ('E',) to page.
+2024-05-02 10:32:50,972 - Email automation - Sending key E
+2024-05-02 10:32:50,978 - Email automation - Sending key(s) (' ',) to page.
+2024-05-02 10:32:50,978 - Email automation - Sending key  
+2024-05-02 10:32:50,984 - Email automation - Sending key(s) ('S',) to page.
+2024-05-02 10:32:50,984 - Email automation - Sending key S
+2024-05-02 10:32:50,991 - Email automation - Sending key(s) ('E',) to page.
+2024-05-02 10:32:50,991 - Email automation - Sending key E
+2024-05-02 10:32:50,999 - Email automation - Sending key(s) ('N',) to page.
+2024-05-02 10:32:50,999 - Email automation - Sending key N
+2024-05-02 10:32:51,006 - Email automation - Sending key(s) ('D',) to page.
+2024-05-02 10:32:51,006 - Email automation - Sending key D
+2024-05-02 10:32:51,014 - Email automation - Sending key(s) (' ',) to page.
+2024-05-02 10:32:51,014 - Email automation - Sending key  
+2024-05-02 10:32:51,022 - Email automation - Sending key(s) ('I',) to page.
+2024-05-02 10:32:51,022 - Email automation - Sending key I
+2024-05-02 10:32:51,029 - Email automation - Sending key(s) ('N',) to page.
+2024-05-02 10:32:51,029 - Email automation - Sending key N
+2024-05-02 10:32:51,034 - Email automation - Sending key(s) ('V',) to page.
+2024-05-02 10:32:51,034 - Email automation - Sending key V
+2024-05-02 10:32:51,040 - Email automation - Sending key(s) ('O',) to page.
+2024-05-02 10:32:51,040 - Email automation - Sending key O
+2024-05-02 10:32:51,045 - Email automation - Sending key(s) ('I',) to page.
+2024-05-02 10:32:51,045 - Email automation - Sending key I
+2024-05-02 10:32:51,050 - Email automation - Sending key(s) ('C',) to page.
+2024-05-02 10:32:51,051 - Email automation - Sending key C
+2024-05-02 10:32:51,057 - Email automation - Sending key(s) ('E',) to page.
+2024-05-02 10:32:51,057 - Email automation - Sending key E
+2024-05-02 10:32:53,072 - Email automation - Escribiendo cuerpo del correo
+2024-05-02 10:32:53,072 - Email automation - Selecting frame '//*[@id="cke_1_contents"]/iframe'.
+2024-05-02 10:32:53,158 - Email automation - Executing JavaScript:
+document.querySelector("body > p").innerHTML = "Body of the email"
+Without any arguments.
+2024-05-02 10:32:55,179 - Email automation - Escribiendo correo destinatario
+2024-05-02 10:32:55,240 - Email automation - Clicking element '//*[@id="ext-gen402"]'.
+2024-05-02 10:32:55,320 - Email automation - Construyendo mensaje
+2024-05-02 10:32:55,320 - Email automation - Mensaje serializado
+2024-05-02 10:32:55,320 - Email automation - Sending key(s) ('j',) to page.
+2024-05-02 10:32:55,320 - Email automation - Sending key j
+2024-05-02 10:32:55,329 - Email automation - Sending key(s) ('u',) to page.
+2024-05-02 10:32:55,330 - Email automation - Sending key u
+2024-05-02 10:32:55,338 - Email automation - Sending key(s) ('a',) to page.
+2024-05-02 10:32:55,338 - Email automation - Sending key a
+2024-05-02 10:32:55,345 - Email automation - Sending key(s) ('n',) to page.
+2024-05-02 10:32:55,345 - Email automation - Sending key n
+2024-05-02 10:32:55,353 - Email automation - Sending key(s) ('.',) to page.
+2024-05-02 10:32:55,353 - Email automation - Sending key .
+2024-05-02 10:32:55,361 - Email automation - Sending key(s) ('v',) to page.
+2024-05-02 10:32:55,361 - Email automation - Sending key v
+2024-05-02 10:32:55,369 - Email automation - Sending key(s) ('a',) to page.
+2024-05-02 10:32:55,369 - Email automation - Sending key a
+2024-05-02 10:32:55,377 - Email automation - Sending key(s) ('l',) to page.
+2024-05-02 10:32:55,377 - Email automation - Sending key l
+2024-05-02 10:32:55,385 - Email automation - Sending key(s) ('e',) to page.
+2024-05-02 10:32:55,385 - Email automation - Sending key e
+2024-05-02 10:32:55,392 - Email automation - Sending key(s) ('n',) to page.
+2024-05-02 10:32:55,393 - Email automation - Sending key n
+2024-05-02 10:32:55,399 - Email automation - Sending key(s) ('z',) to page.
+2024-05-02 10:32:55,399 - Email automation - Sending key z
+2024-05-02 10:32:55,406 - Email automation - Sending key(s) ('u',) to page.
+2024-05-02 10:32:55,406 - Email automation - Sending key u
+2024-05-02 10:32:55,413 - Email automation - Sending key(s) ('e',) to page.
+2024-05-02 10:32:55,413 - Email automation - Sending key e
+2024-05-02 10:32:55,421 - Email automation - Sending key(s) ('l',) to page.
+2024-05-02 10:32:55,421 - Email automation - Sending key l
+2024-05-02 10:32:55,429 - Email automation - Sending key(s) ('a',) to page.
+2024-05-02 10:32:55,429 - Email automation - Sending key a
+2024-05-02 10:32:55,436 - Email automation - Sending key(s) ('@',) to page.
+2024-05-02 10:32:55,436 - Email automation - Sending key @
+2024-05-02 10:32:55,443 - Email automation - Sending key(s) ('w',) to page.
+2024-05-02 10:32:55,443 - Email automation - Sending key w
+2024-05-02 10:32:55,451 - Email automation - Sending key(s) ('o',) to page.
+2024-05-02 10:32:55,452 - Email automation - Sending key o
+2024-05-02 10:32:55,459 - Email automation - Sending key(s) ('t',) to page.
+2024-05-02 10:32:55,459 - Email automation - Sending key t
+2024-05-02 10:32:55,466 - Email automation - Sending key(s) ('d',) to page.
+2024-05-02 10:32:55,466 - Email automation - Sending key d
+2024-05-02 10:32:55,474 - Email automation - Sending key(s) ('e',) to page.
+2024-05-02 10:32:55,474 - Email automation - Sending key e
+2024-05-02 10:32:55,481 - Email automation - Sending key(s) ('v',) to page.
+2024-05-02 10:32:55,481 - Email automation - Sending key v
+2024-05-02 10:32:55,490 - Email automation - Sending key(s) ('.',) to page.
+2024-05-02 10:32:55,490 - Email automation - Sending key .
+2024-05-02 10:32:55,497 - Email automation - Sending key(s) ('c',) to page.
+2024-05-02 10:32:55,498 - Email automation - Sending key c
+2024-05-02 10:32:55,506 - Email automation - Sending key(s) ('o',) to page.
+2024-05-02 10:32:55,506 - Email automation - Sending key o
+2024-05-02 10:32:55,514 - Email automation - Sending key(s) ('m',) to page.
+2024-05-02 10:32:55,514 - Email automation - Sending key m
+2024-05-02 10:32:57,527 - Email automation - Enviando correo

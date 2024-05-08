@@ -1,0 +1,124 @@
+2024-04-25 09:43:17,799 - Email automation - Downloaded webdriver to: C:\ProgramData\robocorp\webdrivers\.wdm\drivers\chromedriver\win64\124.0.6367.78\chromedriver-win32/chromedriver.exe
+2024-04-25 09:43:17,963 - Email automation - Webdriver version taken into use: ChromeDriver 124.0.6367.78 (a087f2dd364ddd58b9c016ef1bf563d2bc138711-refs/branch-heads/6367@{#954})
+
+2024-04-25 09:43:17,963 - Email automation - Creating an instance of the Chrome WebDriver.
+2024-04-25 09:43:19,274 - Email automation - Created Chrome browser (version 124.0.6367) with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox
+2024-04-25 09:43:19,274 - Email automation - <p>Attempted combinations:</p><div class="doc"><table><tr><th>Browser</th><th>Download</th><th>Error</th></tr><tr><td>Chrome</td><td>False</td><td>Message: Webdriver executable 'chromedriver' is not in PATH (with disabled Selenium Manager)
+</td></tr><tr><td>Chrome</td><td>True</td><td></td></tr></table></div>
+2024-04-25 09:43:19,275 - Email automation - Opening url 'https://wotdev.awsapps.com/auth/?client_id=6b9615ec01be1c8d&redirect_uri=https%3A%2F%2Fwebmail.mail.us-east-1.awsapps.com%2Fworkmail%2F'
+2024-04-25 09:43:24,981 - Email automation - Typing text 'juan.valenzuela' into text field '//*[@id="wdc_username"]'.
+2024-04-25 09:43:27,102 - Email automation - Typing text '12FG45#36&hyu' into text field '//*[@id="wdc_password"]'.
+2024-04-25 09:43:29,192 - Email automation - Clicking button '//*[@id="wdc_login_button"]'.
+2024-04-25 09:43:49,309 - Email automation - Ran with keyword <b>Element Should Be Visible</b> which returned error: <i>Element with locator '//*[ contains (text(), "Authentication Failed" ) ]' not found.</i>
+2024-04-25 09:43:49,411 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-04-25 09:43:49,412 - Email automation - Construyendo correo
+2024-04-25 09:43:49,436 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-04-25 09:43:49,436 - Email automation - Clicking element '//*[ contains (text(), "New item" ) ]'.
+2024-04-25 09:43:49,520 - Email automation - Element '//*[ contains (text(), "New email" ) ]' is displayed.
+2024-04-25 09:43:49,520 - Email automation - Clicking element '//*[ contains (text(), "New email" ) ]'.
+2024-04-25 09:43:49,787 - Email automation - Escribiendo asunto del correo
+2024-04-25 09:43:49,787 - Email automation - Typing text 'Please send invoice' into text field '//*[@id="ext-comp-1140"]'.
+2024-04-25 09:46:44,501 - Email automation - Downloaded webdriver to: C:\ProgramData\robocorp\webdrivers\.wdm\drivers\chromedriver\win64\124.0.6367.78\chromedriver-win32/chromedriver.exe
+2024-04-25 09:46:44,523 - Email automation - Webdriver version taken into use: ChromeDriver 124.0.6367.78 (a087f2dd364ddd58b9c016ef1bf563d2bc138711-refs/branch-heads/6367@{#954})
+
+2024-04-25 09:46:44,524 - Email automation - Creating an instance of the Chrome WebDriver.
+2024-04-25 09:46:45,823 - Email automation - Created Chrome browser (version 124.0.6367) with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox
+2024-04-25 09:46:45,823 - Email automation - <p>Attempted combinations:</p><div class="doc"><table><tr><th>Browser</th><th>Download</th><th>Error</th></tr><tr><td>Chrome</td><td>False</td><td>Message: Webdriver executable 'chromedriver' is not in PATH (with disabled Selenium Manager)
+</td></tr><tr><td>Chrome</td><td>True</td><td></td></tr></table></div>
+2024-04-25 09:46:45,823 - Email automation - Opening url 'https://wotdev.awsapps.com/auth/?client_id=6b9615ec01be1c8d&redirect_uri=https%3A%2F%2Fwebmail.mail.us-east-1.awsapps.com%2Fworkmail%2F'
+2024-04-25 09:46:51,644 - Email automation - Typing text 'juan.valenzuela' into text field '//*[@id="wdc_username"]'.
+2024-04-25 09:46:53,764 - Email automation - Typing text '12FG45#36&hyu' into text field '//*[@id="wdc_password"]'.
+2024-04-25 09:46:55,846 - Email automation - Clicking button '//*[@id="wdc_login_button"]'.
+2024-04-25 09:47:15,954 - Email automation - Ran with keyword <b>Element Should Be Visible</b> which returned error: <i>Element with locator '//*[ contains (text(), "Authentication Failed" ) ]' not found.</i>
+2024-04-25 09:47:15,982 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-04-25 09:47:15,983 - Email automation - Construyendo correo
+2024-04-25 09:47:16,009 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-04-25 09:47:16,009 - Email automation - Clicking element '//*[ contains (text(), "New item" ) ]'.
+2024-04-25 09:47:16,089 - Email automation - Element '//*[ contains (text(), "New email" ) ]' is displayed.
+2024-04-25 09:47:16,089 - Email automation - Clicking element '//*[ contains (text(), "New email" ) ]'.
+2024-04-25 09:47:16,302 - Email automation - Escribiendo asunto del correo
+2024-04-25 09:47:16,302 - Email automation - Typing text 'Please send invoice' into text field '//*[@id="ext-comp-1140"]'.
+2024-04-25 09:49:59,953 - Email automation - Downloaded webdriver to: C:\ProgramData\robocorp\webdrivers\.wdm\drivers\chromedriver\win64\124.0.6367.78\chromedriver-win32/chromedriver.exe
+2024-04-25 09:49:59,978 - Email automation - Webdriver version taken into use: ChromeDriver 124.0.6367.78 (a087f2dd364ddd58b9c016ef1bf563d2bc138711-refs/branch-heads/6367@{#954})
+
+2024-04-25 09:49:59,978 - Email automation - Creating an instance of the Chrome WebDriver.
+2024-04-25 09:50:01,303 - Email automation - Created Chrome browser (version 124.0.6367) with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox
+2024-04-25 09:50:01,304 - Email automation - <p>Attempted combinations:</p><div class="doc"><table><tr><th>Browser</th><th>Download</th><th>Error</th></tr><tr><td>Chrome</td><td>False</td><td>Message: Webdriver executable 'chromedriver' is not in PATH (with disabled Selenium Manager)
+</td></tr><tr><td>Chrome</td><td>True</td><td></td></tr></table></div>
+2024-04-25 09:50:01,304 - Email automation - Opening url 'https://wotdev.awsapps.com/auth/?client_id=6b9615ec01be1c8d&redirect_uri=https%3A%2F%2Fwebmail.mail.us-east-1.awsapps.com%2Fworkmail%2F'
+2024-04-25 09:50:07,104 - Email automation - Typing text 'juan.valenzuela' into text field '//*[@id="wdc_username"]'.
+2024-04-25 09:50:09,218 - Email automation - Typing text '12FG45#36&hyu' into text field '//*[@id="wdc_password"]'.
+2024-04-25 09:50:11,362 - Email automation - Clicking button '//*[@id="wdc_login_button"]'.
+2024-04-25 09:50:31,485 - Email automation - Ran with keyword <b>Element Should Be Visible</b> which returned error: <i>Element with locator '//*[ contains (text(), "Authentication Failed" ) ]' not found.</i>
+2024-04-25 09:50:31,528 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-04-25 09:50:31,528 - Email automation - Construyendo correo
+2024-04-25 09:50:31,559 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-04-25 09:50:31,559 - Email automation - Clicking element '//*[ contains (text(), "New item" ) ]'.
+2024-04-25 09:50:33,649 - Email automation - Element '//*[ contains (text(), "New email" ) ]' is displayed.
+2024-04-25 09:50:33,650 - Email automation - Clicking element '//*[ contains (text(), "New email" ) ]'.
+2024-04-25 09:50:35,863 - Email automation - Escribiendo asunto del correo
+2024-04-25 09:50:35,864 - Email automation - Typing text 'Please send invoice' into text field '//*[@id="ext-comp-1140"]'.
+2024-04-25 09:51:12,388 - Email automation - Downloaded webdriver to: C:\ProgramData\robocorp\webdrivers\.wdm\drivers\chromedriver\win64\124.0.6367.78\chromedriver-win32/chromedriver.exe
+2024-04-25 09:51:12,415 - Email automation - Webdriver version taken into use: ChromeDriver 124.0.6367.78 (a087f2dd364ddd58b9c016ef1bf563d2bc138711-refs/branch-heads/6367@{#954})
+
+2024-04-25 09:51:12,416 - Email automation - Creating an instance of the Chrome WebDriver.
+2024-04-25 09:51:13,751 - Email automation - Created Chrome browser (version 124.0.6367) with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox
+2024-04-25 09:51:13,752 - Email automation - <p>Attempted combinations:</p><div class="doc"><table><tr><th>Browser</th><th>Download</th><th>Error</th></tr><tr><td>Chrome</td><td>False</td><td>Message: Webdriver executable 'chromedriver' is not in PATH (with disabled Selenium Manager)
+</td></tr><tr><td>Chrome</td><td>True</td><td></td></tr></table></div>
+2024-04-25 09:51:13,752 - Email automation - Opening url 'https://wotdev.awsapps.com/auth/?client_id=6b9615ec01be1c8d&redirect_uri=https%3A%2F%2Fwebmail.mail.us-east-1.awsapps.com%2Fworkmail%2F'
+2024-04-25 09:51:19,529 - Email automation - Typing text 'juan.valenzuela' into text field '//*[@id="wdc_username"]'.
+2024-04-25 09:51:21,652 - Email automation - Typing text '12FG45#36&hyu' into text field '//*[@id="wdc_password"]'.
+2024-04-25 09:51:23,744 - Email automation - Clicking button '//*[@id="wdc_login_button"]'.
+2024-04-25 09:51:43,879 - Email automation - Ran with keyword <b>Element Should Be Visible</b> which returned error: <i>Element with locator '//*[ contains (text(), "Authentication Failed" ) ]' not found.</i>
+2024-04-25 09:51:43,917 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-04-25 09:51:43,918 - Email automation - Construyendo correo
+2024-04-25 09:51:43,942 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-04-25 09:51:43,943 - Email automation - Clicking element '//*[ contains (text(), "New item" ) ]'.
+2024-04-25 09:51:46,058 - Email automation - Element '//*[ contains (text(), "New email" ) ]' is displayed.
+2024-04-25 09:51:46,058 - Email automation - Clicking element '//*[ contains (text(), "New email" ) ]'.
+2024-04-25 09:51:48,284 - Email automation - Escribiendo asunto del correo
+2024-04-25 09:51:48,346 - Email automation - Element '//*[@id="ext-comp-1140"]' is displayed.
+2024-04-25 09:51:48,347 - Email automation - Clicking element '//*[@id="ext-comp-1140"]'.
+2024-04-25 09:51:48,431 - Email automation - Typing text 'Please send invoice' into text field '//*[@id="ext-comp-1140"]'.
+2024-04-25 09:54:57,062 - Email automation - Downloaded webdriver to: C:\ProgramData\robocorp\webdrivers\.wdm\drivers\chromedriver\win64\124.0.6367.78\chromedriver-win32/chromedriver.exe
+2024-04-25 09:54:57,086 - Email automation - Webdriver version taken into use: ChromeDriver 124.0.6367.78 (a087f2dd364ddd58b9c016ef1bf563d2bc138711-refs/branch-heads/6367@{#954})
+
+2024-04-25 09:54:57,087 - Email automation - Creating an instance of the Chrome WebDriver.
+2024-04-25 09:54:58,372 - Email automation - Created Chrome browser (version 124.0.6367) with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox
+2024-04-25 09:54:58,373 - Email automation - <p>Attempted combinations:</p><div class="doc"><table><tr><th>Browser</th><th>Download</th><th>Error</th></tr><tr><td>Chrome</td><td>False</td><td>Message: Webdriver executable 'chromedriver' is not in PATH (with disabled Selenium Manager)
+</td></tr><tr><td>Chrome</td><td>True</td><td></td></tr></table></div>
+2024-04-25 09:54:58,373 - Email automation - Opening url 'https://wotdev.awsapps.com/auth/?client_id=6b9615ec01be1c8d&redirect_uri=https%3A%2F%2Fwebmail.mail.us-east-1.awsapps.com%2Fworkmail%2F'
+2024-04-25 09:55:04,162 - Email automation - Typing text 'juan.valenzuela' into text field '//*[@id="wdc_username"]'.
+2024-04-25 09:55:06,281 - Email automation - Typing text '12FG45#36&hyu' into text field '//*[@id="wdc_password"]'.
+2024-04-25 09:55:08,411 - Email automation - Clicking button '//*[@id="wdc_login_button"]'.
+2024-04-25 09:55:28,512 - Email automation - Ran with keyword <b>Element Should Be Visible</b> which returned error: <i>Element with locator '//*[ contains (text(), "Authentication Failed" ) ]' not found.</i>
+2024-04-25 09:55:28,539 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-04-25 09:55:28,539 - Email automation - Construyendo correo
+2024-04-25 09:55:28,564 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-04-25 09:55:28,564 - Email automation - Clicking element '//*[ contains (text(), "New item" ) ]'.
+2024-04-25 09:55:30,646 - Email automation - Element '//*[ contains (text(), "New email" ) ]' is displayed.
+2024-04-25 09:55:30,646 - Email automation - Clicking element '//*[ contains (text(), "New email" ) ]'.
+2024-04-25 09:55:32,864 - Email automation - Escribiendo asunto del correo
+2024-04-25 09:55:32,864 - Email automation - Typing text 'Please send invoice' into text field '//*[@id="ext-comp-1239"]'.
+2024-04-25 10:02:34,405 - Email automation - Downloaded webdriver to: C:\ProgramData\robocorp\webdrivers\.wdm\drivers\chromedriver\win64\124.0.6367.78\chromedriver-win32/chromedriver.exe
+2024-04-25 10:02:34,428 - Email automation - Webdriver version taken into use: ChromeDriver 124.0.6367.78 (a087f2dd364ddd58b9c016ef1bf563d2bc138711-refs/branch-heads/6367@{#954})
+
+2024-04-25 10:02:34,428 - Email automation - Creating an instance of the Chrome WebDriver.
+2024-04-25 10:02:35,776 - Email automation - Created Chrome browser (version 124.0.6367) with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox
+2024-04-25 10:02:35,777 - Email automation - <p>Attempted combinations:</p><div class="doc"><table><tr><th>Browser</th><th>Download</th><th>Error</th></tr><tr><td>Chrome</td><td>False</td><td>Message: Webdriver executable 'chromedriver' is not in PATH (with disabled Selenium Manager)
+</td></tr><tr><td>Chrome</td><td>True</td><td></td></tr></table></div>
+2024-04-25 10:02:35,777 - Email automation - Opening url 'https://wotdev.awsapps.com/auth/?client_id=6b9615ec01be1c8d&redirect_uri=https%3A%2F%2Fwebmail.mail.us-east-1.awsapps.com%2Fworkmail%2F'
+2024-04-25 10:02:41,592 - Email automation - Typing text 'juan.valenzuela' into text field '//*[@id="wdc_username"]'.
+2024-04-25 10:02:43,756 - Email automation - Typing text '12FG45#36&hyu' into text field '//*[@id="wdc_password"]'.
+2024-04-25 10:02:45,895 - Email automation - Clicking button '//*[@id="wdc_login_button"]'.
+2024-04-25 10:03:06,026 - Email automation - Ran with keyword <b>Element Should Be Visible</b> which returned error: <i>Element with locator '//*[ contains (text(), "Authentication Failed" ) ]' not found.</i>
+2024-04-25 10:03:06,068 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-04-25 10:03:06,069 - Email automation - Construyendo correo
+2024-04-25 10:03:06,097 - Email automation - Element '//*[ contains (text(), "New item" ) ]' is displayed.
+2024-04-25 10:03:06,097 - Email automation - Clicking element '//*[ contains (text(), "New item" ) ]'.
+2024-04-25 10:03:08,224 - Email automation - Element '//*[ contains (text(), "New email" ) ]' is displayed.
+2024-04-25 10:03:08,224 - Email automation - Clicking element '//*[ contains (text(), "New email" ) ]'.
+2024-04-25 10:03:10,448 - Email automation - Escribiendo asunto del correo
+2024-04-25 10:03:10,449 - Email automation - Executing JavaScript:
+document.querySelector("#ext-comp-1239").value = "Please send invoice"
+Without any arguments.
