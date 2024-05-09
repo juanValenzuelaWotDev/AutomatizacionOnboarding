@@ -91,7 +91,19 @@ data_to_replace_empleado = {
     'anio': 'FECHA_ANIO',
     'mes': 'FECHA_MES',
     'dia': 'FECHA_DIA',
-
+    'puesto': 'PUESTO_EMPLEADO',
+    'cliente': 'CLIENTE_PROYECTO',
+    'dia_inicio': 'DIA_INICIO',
+    'mes_inicio': 'MES_INICIO',
+    'anio_inicio': 'ANIO_INICIO',
+    'duracion_puesto': 'DURACION_PUESTO',
+    'pago_texto_hora': 'PAGO_TEXTO_HORA',
+    'pago_hora': 'PAGO_NUMERO_HORA',
+    'pago_texto_mes': 'PAGO_TEXTO_MES',
+    'pago_mes': 'PAGO_NUMERO_MES',
+    'pago_texto_mes_quetzales': 'PAGO_TEXTO_MES_QUETZALES',
+    'pago_mes_quetzales': 'PAGO_NUMERO_MES_QUETZALES',
+    'modalidad': 'MODALIDAD_TRABAJO',
 }
 
 replaced_data_empleado = {
@@ -99,6 +111,19 @@ replaced_data_empleado = {
     'anio': '2024',
     'mes': 'mayo',
     'dia': '8',
+    'puesto': 'PUESTO_EMPLEADO',
+    'cliente': 'CLIENTE_PROYECTO',
+    'dia_inicio': 'DIA_INICIO',
+    'mes_inicio': 'MES_INICIO',
+    'anio_inicio': 'ANIO_INICIO',
+    'duracion_puesto': 'DURACION_PUESTO',
+    'pago_texto_hora': 'PAGO_TEXTO_HORA',
+    'pago_hora': 'PAGO_NUMERO_HORA',
+    'pago_texto_mes': 'PAGO_TEXTO_MES',
+    'pago_mes': 'PAGO_NUMERO_MES',
+    'pago_texto_mes_quetzales': 'PAGO_TEXTO_MES_QUETZALES',
+    'pago_mes_quetzales': 'PAGO_NUMERO_MES_QUETZALES',
+    'modalidad': 'MODALIDAD_TRABAJO',
 }
 
 

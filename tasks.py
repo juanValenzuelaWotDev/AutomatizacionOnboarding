@@ -15,9 +15,9 @@ password = ""
 body = "Body of the email"
 subject = "Please send invoice"
 
-sender_email = "juan.valenzuela@wotdev.com"
-app_password = "12FG45#36&hyu"
-receiver_email = "testbotbotwotdev@gmail.com"
+sender_email = ""
+app_password = ""
+receiver_email = ""
 
 url = "https://wotdev.awsapps.com/auth/?client_id=6b9615ec01be1c8d&redirect_uri=https%3A%2F%2Fwebmail.mail.us-east-1.awsapps.com%2Fworkmail%2F"
 
