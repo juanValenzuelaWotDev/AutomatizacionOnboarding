@@ -15,5 +15,8 @@ dependencies:
     - robotframework-browser
     - requests==2.31.0            # https://pypi.org/project/requests
     - pandas==2.2.2               # to manipulate excel files
+    - num2words
+    - docx2pdf
+    - docx
 rccPostInstall:
   - rfbrowser init
