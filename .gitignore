@@ -16,3 +16,13 @@ testrun/*
 .~lock*
 *.pkl
 challenge.xlsx
+.env
+delete_images.sh
+geckodriver-1.log
+downloads/*
+modified_documents/*
+logs/*
+wot_automation.json
+create-monthly.json
+workmail_test.py
+database/*
