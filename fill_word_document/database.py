@@ -26,3 +26,7 @@ def save_info_to_database(text,file_name):
 #                       data string  object type (persona, empresa, sociedad)
 # save_info_to_database(str(object),"database.json")
 
+# save dictionary as object
+# print(type(payload) is dict)
+# save_info_to_database(str(payload).replace("'",'"'),'info_representacion.json')
+

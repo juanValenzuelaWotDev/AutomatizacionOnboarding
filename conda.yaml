@@ -18,5 +18,15 @@ dependencies:
     - num2words
     - docx2pdf
     - docx
+    - boto3 #Access amazon SES to send emails
+    - slack_sdk
+    - oauth2client  #for access to google api
+    - gspread
+    - gspread_formatting
+    - google
+    - google-auth
+    - google-api-python-client
+    - google-auth-httplib2
+    - google-auth-oauthlib
 rccPostInstall:
   - rfbrowser init

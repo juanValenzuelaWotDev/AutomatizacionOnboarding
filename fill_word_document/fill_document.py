@@ -1,6 +1,7 @@
 # Import libraries
 from docx import Document
 from docx2pdf import convert
+import json
 import os
 import sys
 # Take the main path of AutomatizacionOnboarding and use it as normal
@@ -11,10 +12,28 @@ import bot_paths
 # turn numbers to words for contract fill
 from num2words import num2words
 
-
-
-# import the bot that downloads the contract
-# from download_contract import download_contract, clean_dir, picture_path
+# Global variables
+# ----------------------------------------------------------------------------------------------------
+# Ejemplo de datos de WOT
+data_to_replace_empleado = {
+    'nombre_empleado' : 'NOMBRE_EMPLEADO',
+    'anio': 'FECHA_ANIO',
+    'mes': 'FECHA_MES',
+    'dia': 'FECHA_DIA',
+    'puesto': 'PUESTO_EMPLEADO',
+    'cliente': 'CLIENTE_PROYECTO',
+    'dia_inicio': 'DIA_INICIO',
+    'mes_inicio': 'MES_INICIO',
+    'anio_inicio': 'ANIO_INICIO',
+    'duracion_puesto': 'DURACION_PUESTO',
+    'pago_texto_hora': 'PAGO_TEXTO_HORA',
+    'pago_hora': 'PAGO_NUMERO_HORA',
+    'pago_texto_mes': 'PAGO_TEXTO_MES',
+    'pago_mes': 'PAGO_NUMERO_MES',
+    'pago_texto_mes_quetzales': 'PAGO_QUETZALES_TEXTO_MES',
+    'pago_mes_quetzales': 'PAGO_QUETZALES_NUMERO_MES',
+    'modalidad': 'MODALIDAD_TRABAJO',
+}
 
 
 
@@ -53,80 +72,6 @@ def num_to_words(number:str):
     return ', '.join(word_buffer)
 
 
-# Test data, this data will come from a data base
-# Data to replace
-data_to_replace = {
-    'arrendante' : 'NOMBRE_ARRENDANTE',
-    'letras_arrendante' : 'DPI_ARRENDANTE_LETRAS',
-    'dpi_arrendante': 'DPI_ARRENDANTE_NUMERO',
-    'profesion_arrendante': 'PROFESION_ARRENDANTE',
-    'arrendatario': 'NOMBRE_ARRENDATARIO',
-    'letras_arrendatario' : 'DPI_ARRENDATARIO_LETRAS',
-    'dpi_arrendatario' : 'DPI_ARRENDATARIO_NUMERO',
-    'profesion_arrendatario': 'PROFESION_ARRENDATARIO',
-    'fecha_actual': 'FECHA_CONTRATO',
-    'fecha_inicio': 'FECHA_INICIO',
-    'fecha_fin': 'FECHA_FIN'
-}
-
-# Data that gets replaced 'dos mil quinientos veintisiete, treinta y nueve mil novecientos sesenta y cinco, cero ciento uno'
-replaced_data = {
-    'arrendante' : 'JUAN PABLO ISAAC VALENZUELA SARAVIA',
-    'letras_arrendante' : num_to_words('3049 08509 0116'),
-    'dpi_arrendante': '3049 08509 0116',
-    'profesion_arrendante': 'Doctor en Informática',
-    'arrendatario': 'LEONARDO AUGUSTO ROSALES ARREAGA',
-    'letras_arrendatario' : num_to_words('2423 67984 0101'),
-    'dpi_arrendatario' : '2423 67984 0101',
-    'profesion_arrendatario': 'Empresario',
-    'fecha_actual': '30 de enero de 2024',
-    'fecha_inicio': '1 de marzo de 2024',
-    'fecha_fin': '1 de noviembre de 2024'
-}
-
-# ----------------------------------------------------------------------------------------------------
-# Ejemplo de datos de WOT
-data_to_replace_empleado = {
-    'nombre_empleado' : 'NOMBRE_EMPLEADO',
-    'anio': 'FECHA_ANIO',
-    'mes': 'FECHA_MES',
-    'dia': 'FECHA_DIA',
-    'puesto': 'PUESTO_EMPLEADO',
-    'cliente': 'CLIENTE_PROYECTO',
-    'dia_inicio': 'DIA_INICIO',
-    'mes_inicio': 'MES_INICIO',
-    'anio_inicio': 'ANIO_INICIO',
-    'duracion_puesto': 'DURACION_PUESTO',
-    'pago_texto_hora': 'PAGO_TEXTO_HORA',
-    'pago_hora': 'PAGO_NUMERO_HORA',
-    'pago_texto_mes': 'PAGO_TEXTO_MES',
-    'pago_mes': 'PAGO_NUMERO_MES',
-    'pago_texto_mes_quetzales': 'PAGO_TEXTO_MES_QUETZALES',
-    'pago_mes_quetzales': 'PAGO_NUMERO_MES_QUETZALES',
-    'modalidad': 'MODALIDAD_TRABAJO',
-}
-
-replaced_data_empleado = {
-    'nombre_empleado' : 'JUAN PABLO VALENZUELA',
-    'anio': '2024',
-    'mes': 'mayo',
-    'dia': '8',
-    'puesto': 'PUESTO_EMPLEADO',
-    'cliente': 'CLIENTE_PROYECTO',
-    'dia_inicio': 'DIA_INICIO',
-    'mes_inicio': 'MES_INICIO',
-    'anio_inicio': 'ANIO_INICIO',
-    'duracion_puesto': 'DURACION_PUESTO',
-    'pago_texto_hora': 'PAGO_TEXTO_HORA',
-    'pago_hora': 'PAGO_NUMERO_HORA',
-    'pago_texto_mes': 'PAGO_TEXTO_MES',
-    'pago_mes': 'PAGO_NUMERO_MES',
-    'pago_texto_mes_quetzales': 'PAGO_TEXTO_MES_QUETZALES',
-    'pago_mes_quetzales': 'PAGO_NUMERO_MES_QUETZALES',
-    'modalidad': 'MODALIDAD_TRABAJO',
-}
-
-
 # This function replaces one word
 def replace_one_word(file_path, search_word, replace_word):
     """
@@ -157,7 +102,7 @@ def replace_one_word(file_path, search_word, replace_word):
     # in here just delete the input file so it doesn't duplicate the next run
 
 # works for multiple words in one document
-def fill_contract(file_path, search_data:dict, replace_data:dict, type:str="wot"):
+def fill_document(file_path, search_data:dict, replace_data:dict, type:str="wot"):
     """
     This function replaces multiple keywords in a document 
     file path is the path where it looks for the template
@@ -196,23 +141,29 @@ def fill_contract(file_path, search_data:dict, replace_data:dict, type:str="wot"
     print("saving document...")
     temporary_name = r"{}\modified_document.docx".format(bot_paths.modified_document_path)
     doc.save(temporary_name)
-    convert(temporary_name, r'{}\{}.pdf'.format(bot_paths.modified_document_path, file_path))
+    # Remove old extension and replace with .pdf
+    new_name = file_path.split(".")[0]
+    new_name = new_name.replace(" [Template]","")
+    # Replace all accented characters (tildes)
+    if ("á" in new_name):
+        new_name = new_name.replace("á","a")
+    elif ("é" in new_name):
+        new_name = new_name.replace("é","e")
+    elif ("í" in new_name):
+        new_name = new_name.replace("í","i")
+    elif ("ó" in new_name):
+        new_name = new_name.replace("ó","o")
+    elif ("ú" in new_name):
+        new_name = new_name.replace("ú","u")
+    # Add more letters as needed
+
+    convert(temporary_name, r'{}\{}.pdf'.format(bot_paths.modified_document_path, new_name))
     # Delete the temporary docx file
     if (os.path.exists(temporary_name)):
         os.remove(temporary_name)
         # clean_dir(picture_path) #clean the download directory to avoid errors
     print("saved!")
-    # in here just delete the input file so it doesn't duplicate the next run
+
+    return f"{new_name}.pdf"
 
 
-# Tests
-# persona-persona
-# Get document path
-# document_path = "CONTRATO_ARRENDAMIENTO_OFICINA.docx"
-# word = data_to_replace['arrendante']
-# replace_word = replaced_data['arrendante']
-# fill_contract(document_path, data_to_replace, replaced_data)
-
-# empresa-empresa
-document_name = "Oportunidad Facturación Servicios Profesionales [Template].docx"
-fill_contract(document_name,data_to_replace_empleado,replaced_data_empleado,"wot")

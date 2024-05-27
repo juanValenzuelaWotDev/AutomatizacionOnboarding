@@ -6,6 +6,13 @@ import os
 download_path = r"{}\downloads".format(os.getcwd())
 modified_document_path = r"{}\modified_documents".format(os.getcwd())
 database_path = r"{}\database".format(os.getcwd())
+creds_path = r"{}\creds".format(os.getcwd())
+# Secondary paths
+fill_word_document_path = r"{}\fill_word_document".format(os.getcwd())
+monthly_path = r"{}\monthly".format(os.getcwd())
+workmail_path = r"{}\workmail".format(os.getcwd())
+slack_path = r"{}\slack".format(os.getcwd())
+
 
 # Put here the functions that check if the folders exist and create them if not
 
@@ -24,6 +31,8 @@ def check_paths():
     check_path(download_path)
     check_path(modified_document_path)
     check_path(database_path)
+    check_path(creds_path)
+    # Add something to check if the creds files are in place
 
 # Just for testing
 # check_paths()
