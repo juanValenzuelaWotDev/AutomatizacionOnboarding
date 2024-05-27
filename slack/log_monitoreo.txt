@@ -1,0 +1,16 @@
+2024-05-09 08:32:20 - El sitio https://repuestosus.com está activo.
+2024-05-09 08:51:44 - No se pudo acceder al sitio thebotdev.com. Error: Invalid URL 'thebotdev.com': No scheme supplied. Perhaps you meant https://thebotdev.com?
+2024-05-09 08:54:02 - El sitio https://wotdev.com/ está activo.
+2024-05-09 08:56:23 - El sitio https://wotdev.com/ está activo.
+2024-05-09 08:57:25 - El sitio https://wotdev.com/ está activo.
+2024-05-09 08:58:26 - El sitio https://wotdev.com/ está activo.
+2024-05-09 08:59:28 - El sitio https://wotdev.com/ está activo.
+2024-05-09 11:41:42 - El sitio https://repuestosus.com/ está activo.
+2024-05-09 12:40:38 - No se pudo acceder al sitio http://thebotdev.com/. Error: HTTPConnectionPool(host='thebotdev.com', port=80): Read timed out. (read timeout=10). Tiempo de respuesta: 10.19 segundos
+2024-05-09 12:45:23 - No se pudo acceder al sitio http://thebotdev.com/. Error: HTTPConnectionPool(host='thebotdev.com', port=80): Read timed out. (read timeout=10). Tiempo de respuesta: 10.20 segundos
+2024-05-09 12:50:46 - El sitio https://repuestosus.com/ está activo.
+2024-05-09 12:54:20 - No se pudo acceder al sitio http://thebotdev.com/. Error: HTTPConnectionPool(host='thebotdev.com', port=80): Read timed out. (read timeout=10)
+2024-05-09 12:59:29 - No se pudo acceder al sitio http://thebotdev.com/. Error: HTTPConnectionPool(host='thebotdev.com', port=80): Read timed out. (read timeout=10)
+2024-05-13 08:46:57 - No se pudo acceder al sitio http://wotdev.com/. Error: HTTPConnectionPool(host='wotdev.com', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001D2FA0AFF20>, 'Connection to wotdev.com timed out. (connect timeout=10)'))
+2024-05-13 09:31:31 - No se pudo acceder al sitio http://thebotdev.com/. Error: HTTPConnectionPool(host='thebotdev.com', port=80): Read timed out. (read timeout=10)
+2024-05-13 09:39:03 - No se pudo acceder al sitio https://wotdev.com/. Error: HTTPSConnectionPool(host='wotdev.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000019E8C0FFB30>, 'Connection to wotdev.com timed out. (connect timeout=10)'))
