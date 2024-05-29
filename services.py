@@ -30,7 +30,8 @@ def load_creds(env:str="stag"):
         # Update global variables
         # Slack bot
         slack_token = os.getenv('SLACK_TOKEN_JAVIERAS')
-        slack_bot_member_id = os.getenv('SLACK_BOT_MEMBER_ID')
+        # slack_bot_member_id = os.getenv('SLACK_BOT_MEMBER_ID')
+        slack_bot_member_id = os.getenv('JP_MEMBER_ID')
 
         # Workmail automation
         workmail = os.getenv('WORKMAIL')
