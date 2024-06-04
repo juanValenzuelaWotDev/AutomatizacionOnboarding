@@ -24,5 +24,7 @@ modified_documents/*
 logs/*
 wot_automation.json
 create-monthly.json
+edit-monthly.json
+reviewMonthly.json
 workmail_test.py
 database/*

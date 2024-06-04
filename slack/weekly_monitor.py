@@ -1,3 +1,4 @@
+import locale
 import time
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
@@ -8,7 +9,7 @@ import os, sys
 sys.path.insert(1, "/".join(os.path.realpath(__file__).split("/")[0:-2]))
 
 # To get the current date
-from datetime import date
+from datetime import date, datetime
 
 # Load the credentials
 import services
@@ -17,7 +18,11 @@ start_time = time.time()
 services.load_creds()
 # Global variables
 current_date = date.today()
-
+locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
+now = datetime.now()
+current_month_year = now.strftime('%B %y') 
+current_month_year = current_month_year.capitalize() 
+print(current_month_year)
 # Slack service API
 client = WebClient(token=services.slack_token)
 
@@ -64,7 +69,7 @@ def monitor_week_monthly(monthly_link:str, hours:int=40, slack_users:list=[""]):
             break
 
     base_datos = client.open_by_url(monthly_link)
-    individual_monthly = base_datos.sheet1
+    individual_monthly = base_datos.worksheet(current_month_year)
 
     print("Found and opened monthly")
 
@@ -126,11 +131,11 @@ def monitor_week_optimized(monthly_link:str, hours:int|float=40.01, slack_users:
     api_calls = 0
     slack_messages = "" #This array has all the slack messages that you need to send to Javier
     execution_date = current_date.strftime('%d-%m-%Y')
-    execution_date = '27-05-2024'
+    execution_date = '13-05-2024'
     # Execution
     # print("Monitoring week")
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-    credentials = ServiceAccountCredentials.from_json_keyfile_name(f"{os.getcwd()}/creds/create-monthly.json", scope)
+    credentials = ServiceAccountCredentials.from_json_keyfile_name(f"{os.getcwd()}/creds/reviewMonthly.json", scope)
     client = gspread.authorize(credentials)
 
    # Get the spreadsheet id automatically
@@ -168,6 +173,9 @@ def monitor_week_optimized(monthly_link:str, hours:int|float=40.01, slack_users:
     if (space_available >= 7):
         # print(f'There is enough space {space_available}')
         days_range = range(1,8)
+    elif (space_available <= 5):
+        print("No hay dias suficientes para revisar")
+        return True
     else:
         # print(f'There is not enough space to check, you can check only the available days {space_available}')
         days_range = range(1,space_available + 1)
@@ -222,7 +230,7 @@ def monitor_week_optimized(monthly_link:str, hours:int|float=40.01, slack_users:
         # print(f"Total week hours: {total_week_hours}")
 
         # Now display an alert when the hours are greater than 40
-        if total_week_hours > hours:
+        if (total_week_hours > hours) or (total_week_hours < 20.0):
             # Optimize the person name
             nombre_persona_op = nombre_persona.lower().replace(' ','_').replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u')
             # Add the people that display 40 or more hours this week
@@ -243,4 +251,4 @@ def monitor_week_optimized(monthly_link:str, hours:int|float=40.01, slack_users:
 # monitor_week_optimized(monthly_link = "https://docs.google.com/spreadsheets/d/1eFUWJ9G3GTjaDAbvZTGbDg3iOtiSpnWwX9l3ssfd2Ho/edit#gid=390949190", hours=40.0, slack_users=[services.slack_bot_member_id])
 
 # Prod, real data
-monitor_week_optimized(monthly_link = "https://docs.google.com/spreadsheets/d/16_SiESeq9HTtrklb6MZMKHRIUypcLnP71gO3AGSWmrU/edit#gid=2027328494", hours=40.0, slack_users=[services.slack_bot_member_id])
+# monitor_week_optimized(monthly_link = "https://docs.google.com/spreadsheets/d/16_SiESeq9HTtrklb6MZMKHRIUypcLnP71gO3AGSWmrU/edit#gid=2027328494", hours=40.0, slack_users=['U066NERJBD2'])
