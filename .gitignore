@@ -26,3 +26,5 @@ wot_automation.json
 create-monthly.json
 workmail_test.py
 database/*
+
+creds/*
