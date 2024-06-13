@@ -32,12 +32,12 @@ def enable_workmail_user(organization_id, user_id, user_email, access_key, secre
         print(f"Failed to enable user: {str(e)}")
         return {}
 
-# Example usage
-organization_id = os.getenv('WOT_ORGANIZATION_ID')  # From your .env file
-access_key = os.getenv('ACCESS_KEY')
-secret_key = os.getenv('SECRET_KEY')
-region = os.getenv('AWS_REGION', 'us-east-1')
-user_id = 'ca8ad72d-0dde-49e8-a936-e14c32dde7e8'  # You need to provide the User ID
-user_email = 'prueba.automation2@wotdev.com'  # User email to register to WorkMail
+# # Example usage
+# organization_id = os.getenv('WOT_ORGANIZATION_ID')  # From your .env file
+# access_key = os.getenv('ACCESS_KEY')
+# secret_key = os.getenv('SECRET_KEY')
+# region = os.getenv('AWS_REGION', 'us-east-1')
+# user_id = '8bd5c895-8900-4df0-82f4-d36996d307ca'  # You need to provide the User ID
+# user_email = 'prueba.automation3@wotdev.com'  # User email to register to WorkMail
 
-# enable_workmail_user(organization_id, user_id, user_email, access_key, secret_key, region)
+# # enable_workmail_user(organization_id, user_id, user_email, access_key, secret_key, region)
