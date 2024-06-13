@@ -31,11 +31,11 @@ def disable_workmail_user(organization_id, user_id, access_key, secret_key, regi
         print(f"Failed to disable user: {str(e)}")
         return {}
 
-# Example usage
-organization_id = os.getenv('WOT_ORGANIZATION_ID')  # From your .env file
-access_key = os.getenv('ACCESS_KEY')
-secret_key = os.getenv('SECRET_KEY')
-region = os.getenv('AWS_REGION', 'us-east-1')
-user_id = 'd4a76c69-d488-4bb6-a1d8-aa8e638e6ee4'  # You need to provide the User ID
+# # Example usage
+# organization_id = os.getenv('WOT_ORGANIZATION_ID')  # From your .env file
+# access_key = os.getenv('ACCESS_KEY')
+# secret_key = os.getenv('SECRET_KEY')
+# region = os.getenv('AWS_REGION', 'us-east-1')
+# user_id = 'd4a76c69-d488-4bb6-a1d8-aa8e638e6ee4'  # You need to provide the User ID
 
-disable_workmail_user(organization_id, user_id, access_key, secret_key, region)
+# disable_workmail_user(organization_id, user_id, access_key, secret_key, region)

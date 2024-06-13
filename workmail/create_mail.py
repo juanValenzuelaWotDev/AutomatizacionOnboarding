@@ -5,11 +5,12 @@ from botocore.exceptions import NoCredentialsError, PartialCredentialsError, Cli
 from password_generator import generate_password
 
 # Load environment variables from the specified path
-creds_path = r"{}\creds\.env".format(os.getcwd())
-print(f"Creds path:\n{creds_path}")
-load_dotenv(dotenv_path=creds_path)
+# creds_path = r"{}\creds\.env".format(os.getcwd())
+# print(f"Creds path:\n{creds_path}")
+# load_dotenv(dotenv_path=creds_path)
 
 def create_workmail_user(organization_id, user_email, display_name, access_key, secret_key, region):
+    account_password = generate_password(16)  # 16 character password
     try:
         # Configuring the client with specified credentials and region
         client = boto3.client(
@@ -23,10 +24,10 @@ def create_workmail_user(organization_id, user_email, display_name, access_key, 
             OrganizationId=organization_id,
             Name=user_email.split('@')[0],  # Assuming the email prefix as username
             DisplayName=display_name,
-            Password=generate_password(16)  # Ensure to follow security best practices
+            Password=account_password
         )
         print(f"User created successfully: {response['UserId']}")
-        return response
+        return {**response, 'password': account_password}
     except NoCredentialsError:
         print("Credentials are not available.")
         return {}

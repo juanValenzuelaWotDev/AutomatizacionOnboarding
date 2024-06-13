@@ -4,9 +4,9 @@ from dotenv import load_dotenv
 from botocore.exceptions import NoCredentialsError, PartialCredentialsError, ClientError
 
 # Load environment variables from the specified path
-creds_path = r"{}\creds\.env".format(os.getcwd())
-print(f"Creds path:\n{creds_path}")
-load_dotenv(dotenv_path=creds_path)
+# creds_path = r"{}\creds\.env".format(os.getcwd())
+# print(f"Creds path:\n{creds_path}")
+# load_dotenv(dotenv_path=creds_path)
 
 def enable_workmail_user(organization_id, user_id, user_email, access_key, secret_key, region):
     try:
@@ -23,7 +23,7 @@ def enable_workmail_user(organization_id, user_id, user_email, access_key, secre
             EntityId=user_id,  # User ID of the account to be enabled
             Email=user_email  # Email of the user to be enabled
         )
-        print(f"User enabled successfully: {response}")
+        print(f"User enabled successfully!")
         return response
     except ClientError as e:
         print(f"An AWS service error occurred: {e}")

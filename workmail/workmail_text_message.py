@@ -6,9 +6,9 @@ from botocore.exceptions import NoCredentialsError, PartialCredentialsError, Cli
 from dotenv import load_dotenv
 
 # Load environment variables from the specified path
-creds_path = r"{}\creds\.env".format(os.getcwd())
-print(f"Creds path:\n{creds_path}")
-load_dotenv(dotenv_path=creds_path)
+# creds_path = r"{}\creds\.env".format(os.getcwd())
+# print(f"Creds path:\n{creds_path}")
+# load_dotenv(dotenv_path=creds_path)
 
 def send_email(subject, body, recipients, sender, access_key, secret_key, region='us-east-1'):
     # Create a multipart message
@@ -33,16 +33,17 @@ def send_email(subject, body, recipients, sender, access_key, secret_key, region
             RawMessage={'Data': raw_message}
         )
         print("Email sent successfully! Message ID:", response['MessageId'])
+        return response
     except ClientError as e:
         print("Failed to send email:", e)
 
-# Example usage
-subject = "Hello from WorkMail"
-body = "This is a test email from AWS WorkMail."
-recipients = ['prueba.automation1@wotdev.com','prueba.automation2@wotdev.com']  # List of email recipients
-sender = 'javieras@wotdev.com'  # Your WorkMail email address
-access_key = os.getenv('ACCESS_KEY')
-secret_key = os.getenv('SECRET_KEY')
-region = os.getenv('AWS_REGION', 'us-east-1') #default to 'us-east-1'
+# # Example usage
+# subject = "Hello from WorkMail"
+# body = "This is a test email from AWS WorkMail."
+# recipients = ['prueba.automation1@wotdev.com','prueba.automation2@wotdev.com']  # List of email recipients
+# sender = 'javieras@wotdev.com'  # Your WorkMail email address
+# access_key = os.getenv('ACCESS_KEY')
+# secret_key = os.getenv('SECRET_KEY')
+# region = os.getenv('AWS_REGION', 'us-east-1') #default to 'us-east-1'
 
-send_email(subject, body, recipients, sender, access_key, secret_key, region)
+# send_email(subject, body, recipients, sender, access_key, secret_key, region)
